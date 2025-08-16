@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace FicticiaBackend.Controllers
 {
-    [Authorize] // Requiere autenticación para todo el controlador
+    [Authorize] 
     [Route("api/[controller]")]
     [ApiController]
     public class PersonasController : ControllerBase
@@ -78,7 +78,7 @@ namespace FicticiaBackend.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")] // Solo usuarios con rol Admin pueden eliminar
+        [Authorize(Roles = "Admin")] 
         public async Task<ActionResult> Delete(int id)
         {
             var existente = await _getPersonaByIdQuery.ExecuteAsync(id);

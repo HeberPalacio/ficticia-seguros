@@ -52,13 +52,12 @@ namespace FicticiaBackend.Controllers
                 if (resultado == PasswordVerificationResult.Failed)
                     return Unauthorized("Contraseña incorrecta");
 
-                // Generar JWT incluyendo roles
                 var token = GenerateJwtToken(usuario);
 
                 return Ok(new
                 {
                     token,
-                    roles = usuario.Roles // <-- enviar roles al frontend
+                    roles = usuario.Roles 
                 });
             }
             catch (Exception ex)
@@ -73,7 +72,7 @@ namespace FicticiaBackend.Controllers
             {
                 new Claim(JwtRegisteredClaimNames.Sub, usuario.Username),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim("roles", string.Join(",", usuario.Roles)) // <-- roles en el token
+                new Claim("roles", string.Join(",", usuario.Roles))
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"] ?? "clave_secreta_temporal"));

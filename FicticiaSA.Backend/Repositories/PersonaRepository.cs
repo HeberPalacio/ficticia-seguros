@@ -1,8 +1,7 @@
 ﻿using FicticiaBackend.Data;
 using FicticiaBackend.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+
 
 namespace FicticiaBackend.Repositories
 {
@@ -22,7 +21,10 @@ namespace FicticiaBackend.Repositories
 
         public async Task<Persona> GetByIdAsync(int id)
         {
-            return await _context.Personas.FindAsync(id);
+            var persona = await _context.Personas.FindAsync(id);
+            if (persona == null)
+                throw new KeyNotFoundException($"No se encontró persona con Id {id}");
+            return persona;
         }
 
         public async Task AddAsync(Persona persona)
@@ -33,14 +35,12 @@ namespace FicticiaBackend.Repositories
 
         public async Task UpdateAsync(Persona persona)
         {
-            // Primero obtenemos la entidad existente
             var existente = await _context.Personas.FindAsync(persona.Id);
             if (existente == null)
             {
                 throw new KeyNotFoundException($"No se encontró una persona con ID {persona.Id}");
             }
 
-            // Actualizamos solo los campos permitidos
             existente.NombreCompleto = persona.NombreCompleto;
             existente.Identificacion = persona.Identificacion;
             existente.Edad = persona.Edad;

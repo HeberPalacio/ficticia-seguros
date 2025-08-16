@@ -13,7 +13,6 @@ namespace FicticiaBackend.Models
         [Required]
         public string PasswordHash { get; set; } = null!;
 
-        // Lista de roles (Admin, User, etc.)
         public string Roles { get; set; } = string.Empty;
     }
 }

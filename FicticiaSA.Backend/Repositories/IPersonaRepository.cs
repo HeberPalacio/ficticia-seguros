@@ -1,6 +1,4 @@
 ﻿using FicticiaBackend.Models;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace FicticiaBackend.Repositories
 {

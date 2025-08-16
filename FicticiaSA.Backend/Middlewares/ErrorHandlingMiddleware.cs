@@ -45,7 +45,7 @@ namespace FicticiaBackend.Middlewares
             {
                 success = false,
                 message = "Ocurrió un error inesperado. Por favor, intente nuevamente.",
-                detail = ex.Message, // ⚠️ En producción puedes quitarlo
+                detail = ex.Message, 
                 statusCode = context.Response.StatusCode
             };
 

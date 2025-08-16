@@ -1,6 +1,5 @@
 ﻿using FicticiaBackend.Models;
 using FicticiaBackend.Repositories;
-using System.Threading.Tasks;
 
 namespace FicticiaBackend.Queries
 {

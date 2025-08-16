@@ -4,10 +4,8 @@
 
 namespace FicticiaBackend.Migrations
 {
-    /// <inheritdoc />
     public partial class AddRolesColumn : Migration
     {
-        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
@@ -28,7 +26,6 @@ namespace FicticiaBackend.Migrations
                 oldMaxLength: 200);
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(

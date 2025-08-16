@@ -1,6 +1,5 @@
 using FluentAssertions;
-using Xunit;
-using FicticiaSA.Backend.Security; // asegúrate de tener la referencia correcta
+using FicticiaSA.Backend.Security;
 
 namespace FicticiaSA.Backend.Tests.Security
 {
@@ -9,7 +8,7 @@ namespace FicticiaSA.Backend.Tests.Security
 		[Fact]
 		public void Hash_SameInput_ShouldProduceSameHash()
 		{
-			var hasher = new PasswordHasher(); // ajusta a tu implementación real
+			var hasher = new PasswordHasher(); 
 			var h1 = hasher.Hash("1234");
 			var h2 = hasher.Hash("1234");
 			h1.Should().Be(h2);

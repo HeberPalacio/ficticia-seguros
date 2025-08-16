@@ -2,7 +2,6 @@
 using FicticiaBackend.Models;
 using FicticiaBackend.Repositories;
 using Microsoft.EntityFrameworkCore;
-using Xunit;
 using FluentAssertions;
 
 namespace FicticiaSA.Backend.Tests.Repositories
@@ -62,13 +61,10 @@ namespace FicticiaSA.Backend.Tests.Repositories
                 EnfermedadOtra = null
             };
 
-            // Agregar la persona (EF Core genera el Id automáticamente)
             await repo.AddAsync(persona);
 
-            // Borrar usando el Id generado automáticamente
             await repo.DeleteAsync(persona.Id);
 
-            // Verificar que la tabla está vacía
             var personas = await repo.GetAllAsync();
             personas.Should().BeEmpty();
         }
