@@ -1,0 +1,372 @@
+<div class="personas-container">
+  <!-- Encabezado y acciones -->
+  <div class="acciones-tabla">
+    <div class="tabla-left">
+      <h2>Listado de Afiliados</h2>
+    </div>
+
+    <div class="tabla-right">
+      <!-- Filtros -->
+      <div class="filtros-container">
+        <button class="btn-filtros" (click)="mostrarFiltros = !mostrarFiltros">
+          Filtros
+          <span [class.rotate]="mostrarFiltros">▼</span>
+        </button>
+
+        <div class="panel-filtros" *ngIf="mostrarFiltros" #panelFiltros>
+          <label>
+            Estado:
+            <select [(ngModel)]="filtroActivo" (change)="filtrarPersonas()">
+              <option value="">Todos</option>
+              <option value="true">Activos</option>
+              <option value="false">No activos</option>
+            </select>
+          </label>
+
+          <label>
+            Género:
+            <select [(ngModel)]="filtroGenero" (change)="filtrarPersonas()">
+              <option value="">Todos</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              [(ngModel)]="filtroLentes"
+              (change)="filtrarPersonas()"
+            />
+            Usan lentes
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              [(ngModel)]="filtroDiabetico"
+              (change)="filtrarPersonas()"
+            />
+            Diabéticos
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              [(ngModel)]="filtroManeja"
+              (change)="filtrarPersonas()"
+            />
+            Manejan
+          </label>
+
+          <button class="btn-limpiar" (click)="limpiarFiltros()">
+            Limpiar
+          </button>
+        </div>
+      </div>
+
+      <!-- Buscador -->
+      <div class="buscador-container">
+        <input
+          type="text"
+          placeholder="Buscar afiliado..."
+          [(ngModel)]="terminoBusqueda"
+          (input)="filtrarPersonas()"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+
+      <!-- Botón agregar -->
+      <button type="button" (click)="nuevo()">Agregar</button>
+
+      <button class="btn-cerrar-sesion" (click)="abrirConfirmarCerrarSesion()">
+        <i class="fas fa-sign-out-alt"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mensaje de error -->
+  <div *ngIf="errorMensaje" class="error">{{ errorMensaje }}</div>
+
+  <!-- Tabla de personas -->
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre completo</th>
+        <th>Identificación</th>
+        <th>Edad</th>
+        <th>Género</th>
+        <th>Activo</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let persona of personasPaginadas">
+        <tr (click)="toggleExpand(persona.id)">
+          <td>{{ persona.id }}</td>
+          <td>{{ persona.nombreCompleto }}</td>
+          <td>{{ persona.identificacion }}</td>
+          <td>{{ persona.edad || "Edad" }}</td>
+          <td>{{ persona.genero }}</td>
+          <td>
+            <i
+              class="fas"
+              [ngClass]="
+                persona.estadoActivo
+                  ? 'fa-circle-check text-success'
+                  : 'fa-circle-xmark text-danger'
+              "
+              title="{{ persona.estadoActivo ? 'Activo' : 'Inactivo' }}"
+            ></i>
+          </td>
+          <td>
+            <button
+              class="icon-btn edit-btn"
+              (click)="editar(persona); $event.stopPropagation()"
+              title="Editar"
+            >
+              <i class="fas fa-edit"></i>
+            </button>
+            <button
+              *ngIf="esAdmin"
+              class="icon-btn delete-btn"
+              (click)="borrar(persona.id); $event.stopPropagation()"
+              title="Eliminar"
+            >
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </td>
+        </tr>
+
+        <!-- Fila expandida con detalles -->
+        <tr *ngIf="expandedRow === persona.id" class="fila-detalles">
+          <td colspan="7">
+            <div class="detalle">
+              <label class="checkbox-round">
+                <input type="checkbox" [checked]="persona.usaLentes" disabled />
+                <span>Usa lentes</span>
+              </label>
+              <label class="checkbox-round">
+                <input type="checkbox" [checked]="persona.maneja" disabled />
+                <span>Maneja</span>
+              </label>
+              <label class="checkbox-round">
+                <input type="checkbox" [checked]="persona.diabetico" disabled />
+                <span>Es diabético</span>
+              </label>
+              <p>
+                <strong>Otras enfermedades:</strong>
+                {{ persona.enfermedadOtra || "Ninguna" }}
+              </p>
+            </div>
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+
+  <!-- Paginación -->
+  <div class="paginacion">
+    <button
+      (click)="paginaAnterior()"
+      [disabled]="paginaActual === 1"
+      title="Página anterior"
+    >
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <ng-container *ngFor="let num of paginasDisponibles">
+      <button (click)="irAPagina(num)" [class.activa]="num === paginaActual">
+        {{ num }}
+      </button>
+    </ng-container>
+
+    <button
+      (click)="paginaSiguiente()"
+      [disabled]="paginaActual === totalPaginas"
+      title="Página siguiente"
+    >
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <!-- Modal de confirmación de cierre de sesión -->
+  <div
+    class="modal-overlay"
+    *ngIf="confirmarCerrarSesion"
+    (click)="cancelarCerrarSesion()"
+  >
+    <div class="modal confirm-modal" (click)="$event.stopPropagation()">
+      <h3>¿Seguro que quieres cerrar sesión?</h3>
+      <p>Se cerrará tu sesión actual y volverás al login.</p>
+      <div class="botones-confirm">
+        <button
+          type="button"
+          class="btn-cancelar"
+          (click)="cancelarCerrarSesion()"
+        >
+          Cancelar
+        </button>
+        <button
+          type="button"
+          class="btn-confirmar"
+          (click)="cerrarSesionConfirmado()"
+        >
+          Cerrar sesión
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de edición -->
+  <div class="modal-overlay" *ngIf="modalAbierto" (click)="cancelar()">
+    <div *ngIf="personaSeleccionada" class="modal">
+      <div class="modal-content" (click)="$event.stopPropagation()">
+        <h3>
+          {{ personaSeleccionada.id ? "Editar afiliado" : "Nuevo afiliado" }}
+        </h3>
+
+        <div *ngIf="formularioEnviado && personaForm.invalid" class="error">
+          Por favor complete todos los campos obligatorios correctamente.
+        </div>
+
+        <form [formGroup]="personaForm" (ngSubmit)="guardar()">
+          <!-- Columnas de formulario -->
+          <div class="form-columns">
+            <!-- Columna izquierda -->
+            <div class="col-izq">
+              <input
+                type="text"
+                formControlName="nombreCompleto"
+                placeholder="Nombre completo"
+                [class.invalido]="
+                  personaForm.get('nombreCompleto')?.invalid &&
+                  formularioEnviado
+                "
+              />
+              <div
+                *ngIf="
+                  personaForm.get('nombreCompleto')?.invalid &&
+                  formularioEnviado
+                "
+              >
+                <small
+                  *ngIf="personaForm.get('nombreCompleto')?.errors?.['minlength']"
+                  >Mínimo 3 caracteres.</small
+                >
+                <small
+                  *ngIf="personaForm.get('nombreCompleto')?.errors?.['maxlength']"
+                  >Máximo 100 caracteres.</small
+                >
+              </div>
+
+              <input
+                type="text"
+                formControlName="identificacion"
+                placeholder="Identificación"
+                [class.invalido]="
+                  personaForm.get('identificacion')?.invalid &&
+                  formularioEnviado
+                "
+              />
+              <div
+                *ngIf="
+                  personaForm.get('identificacion')?.invalid &&
+                  formularioEnviado
+                "
+              >
+                <small
+                  *ngIf="personaForm.get('identificacion')?.errors?.['maxlength']"
+                  >Máximo 20 caracteres.</small
+                >
+              </div>
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="col-der">
+              <input
+                type="number"
+                formControlName="edad"
+                placeholder="Edad"
+                [class.invalido]="
+                  personaForm.get('edad')?.invalid && formularioEnviado
+                "
+              />
+              <div
+                *ngIf="personaForm.get('edad')?.invalid && formularioEnviado"
+              >
+                <small
+                  *ngIf="personaForm.get('edad')?.errors?.['min'] || personaForm.get('edad')?.errors?.['max']"
+                >
+                  La edad debe estar entre 0 y 120.
+                </small>
+              </div>
+
+              <select
+                formControlName="genero"
+                [class.invalido]="
+                  personaForm.get('genero')?.invalid && formularioEnviado
+                "
+              >
+                <option value="" disabled selected hidden>Género</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Checkboxes -->
+          <div class="col-checkboxes">
+            <label
+              ><input type="checkbox" formControlName="estadoActivo" />
+              Activo</label
+            >
+            <label
+              ><input type="checkbox" formControlName="maneja" /> Maneja</label
+            >
+            <label
+              ><input type="checkbox" formControlName="usaLentes" /> Usa
+              lentes</label
+            >
+            <label
+              ><input type="checkbox" formControlName="diabetico" />
+              Diabético</label
+            >
+          </div>
+
+          <!-- Otra enfermedad -->
+          <div class="col-enfermedad">
+            <input
+              type="text"
+              formControlName="enfermedadOtra"
+              placeholder="Otra enfermedad"
+              [class.invalido]="
+                personaForm.get('enfermedadOtra')?.invalid && formularioEnviado
+              "
+            />
+            <div
+              class="error"
+              *ngIf="
+                personaForm.get('enfermedadOtra')?.invalid && formularioEnviado
+              "
+            >
+              <small
+                *ngIf="personaForm.get('enfermedadOtra')?.errors?.['maxlength']"
+                >Máximo 200 caracteres.</small
+              >
+            </div>
+          </div>
+
+          <!-- Botones -->
+          <div class="botones">
+            <button type="submit">Guardar</button>
+            <button type="button" (click)="cancelar()">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

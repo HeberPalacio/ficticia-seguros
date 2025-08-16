@@ -1,0 +1,136 @@
+/* ============================
+   LOGIN CONTAINER
+============================ */
+.login-container {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(to bottom, #051019, #00425b);
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================
+   LOGIN BOX / FORMULARIO
+============================ */
+form {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.137);
+  backdrop-filter: blur(10px);
+  padding: 40px 30px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ============================
+   TÍTULO
+============================ */
+h2 {
+  text-align: center;
+  color: #fcfcfc;
+  margin: 0 0 2rem 0;
+  font-size: 28px;
+}
+
+/* ============================
+   MENSAJES DE ERROR
+============================ */
+.error {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* ============================
+   INPUTS CON ICONOS
+============================ */
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-container i {
+  position: absolute;
+  right: 12px;
+  top: 35%;
+  transform: translateY(-50%);
+  color: #fcfcfc;
+  font-size: 16px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 12px 0 12px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 2rem;
+  font-size: 14px;
+  color: #fcfcfc;
+  background-color: rgba(255, 255, 255, 0.137);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 12px 0 12px 0;
+  margin-bottom: 20px;
+  border: 1px solid #fcfcfc;
+  border-radius: 2rem;
+  font-size: 14px;
+  color: #fcfcfc;
+  background-color: rgba(255, 255, 255, 0.137);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px 20px;
+}
+
+input::placeholder {
+  color: #fcfcfc;
+  opacity: 0.7;
+}
+
+.input-container input:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #00d9ff;
+  box-shadow: 0 0 8px rgba(26, 191, 185, 0.8);
+}
+
+/* ============================
+   BOTONES
+============================ */
+button {
+  background-color: #fcfcfc;
+  color: #0b273d;
+  padding: 12px 0;
+  border: none;
+  border-radius: 2rem;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #00425b;
+  color: #fcfcfc;
+  border: 1px solid #fcfcfc;
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+@media (max-width: 400px) {
+  form {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}

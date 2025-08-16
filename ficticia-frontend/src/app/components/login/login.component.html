@@ -1,0 +1,32 @@
+<div class="login-container">
+  <div class="login-box" style="position: relative; z-index: 1">
+    <form (ngSubmit)="login()">
+      <h2>Ficticia S.A.</h2>
+      <div *ngIf="error" class="error">{{ error }}</div>
+
+      <!-- Input usuario con icono -->
+      <div class="input-container">
+        <i class="fa fa-user"></i>
+        <input
+          type="text"
+          [(ngModel)]="username"
+          name="username"
+          placeholder="Usuario"
+        />
+      </div>
+
+      <!-- Input contraseña con icono -->
+      <div class="input-container">
+        <i class="fa fa-lock"></i>
+        <input
+          type="password"
+          [(ngModel)]="password"
+          name="password"
+          placeholder="Contraseña"
+        />
+      </div>
+
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
+</div>
