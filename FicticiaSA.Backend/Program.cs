@@ -22,12 +22,13 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
     options.InvalidModelStateResponseFactory = context =>
     {
         var errores = context.ModelState
-            .Where(x => x.Value.Errors.Count > 0)
+            .Where(x => x.Value!.Errors.Count > 0)
             .Select(x => new
             {
                 Campo = x.Key,
-                Errores = x.Value.Errors.Select(e => e.ErrorMessage)
+                Errores = x.Value!.Errors.Select(e => e.ErrorMessage)
             });
+
 
         return new BadRequestObjectResult(new
         {
@@ -67,7 +68,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateIssuerSigningKey = true,
             ValidIssuer = issuer,
             ValidAudience = audience,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key))
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key ?? "ClaveTemporal1234"))
         };
     });
 

@@ -326,6 +326,7 @@ C:\Users\Asus\Documents\Heber\Ficticia S.A\FicticiaSA.Backend\obj\Debug\net8.0\F
 C:\Users\Asus\Documents\Heber\Ficticia S.A\FicticiaSA.Backend\obj\Debug\net8.0\FicticiaBackend.csproj.CoreCompileInputs.cache
 C:\Users\Asus\Documents\Heber\Ficticia S.A\FicticiaSA.Backend\obj\Debug\net8.0\FicticiaBackend.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Asus\Documents\Heber\Ficticia S.A\FicticiaSA.Backend\obj\Debug\net8.0\FicticiaBackend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Asus\Documents\Heber\Ficticia S.A\FicticiaSA.Backend\obj\Debug\net8.0\FicticiaBackend.sourcelink.json
 C:\Users\Asus\Documents\Heber\Ficticia S.A\FicticiaSA.Backend\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\Asus\Documents\Heber\Ficticia S.A\FicticiaSA.Backend\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\Asus\Documents\Heber\Ficticia S.A\FicticiaSA.Backend\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

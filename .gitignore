@@ -1,56 +1,26 @@
 # ==========================
-# Node.js / Frontend & Backend
+# .NET / Visual Studio
 # ==========================
 
-# Compiled output / Build
-**/dist/
-**/tmp/
-**/out-tsc/
-**/bazel-out/
+# Visual Studio temporary files
+.vs/
+.vscode/ (ya lo tienes cubierto)
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-# Node
-**/node_modules/
-npm-debug.log
-yarn-error.log
+# Build folders
+bin/
+obj/
 
-# IDEs and editors
+# NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+
+# Logs
+*.log
+
+# JetBrains Rider
 .idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
-
-# Angular / Frontend specifics
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
-
-# Environment files
-**/.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Miscellaneous
-*.tmp
-*.temp
-*.bak
