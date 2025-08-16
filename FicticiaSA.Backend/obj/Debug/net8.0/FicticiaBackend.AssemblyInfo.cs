@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FicticiaBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f900ff0d45b29c008573b47b1c39df0b157b1da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+185b4a81bfbdef72b5b9e4d3ccb8db6b58e885fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("FicticiaBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FicticiaBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
