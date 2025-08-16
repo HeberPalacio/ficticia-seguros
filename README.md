@@ -163,7 +163,7 @@ dotnet test FicticiaSA.Backend.Tests
 
 ## Principios aplicados
 
-Este proyecto no solo cumple con los requerimientos funcionales, sino que también refleja **principios de persuasión, claridad y profesionalismo**:
+Este proyecto no solo cumple con los requerimientos funcionales, sino que también refleja **claridad y profesionalismo**:
 
 * Comunicación clara y directa del valor de la solución
 * Uso de estructuras de código estandarizadas que generan confianza
