@@ -1,26 +1,40 @@
 # ==========================
-# .NET / Visual Studio
+# Angular / Node
 # ==========================
+/node_modules
+/dist
+/tmp
+/out-tsc
+/.angular/cache
+/npm-debug.log*
+/yarn-error.log
 
-# Visual Studio temporary files
-.vs/
-.vscode/ (ya lo tienes cubierto)
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
+# Environment files
+.env
+.env.*.local
 
-# Build folders
+# ==========================
+# Visual Studio / .NET
+# ==========================
 bin/
 obj/
-
-# NuGet packages
-*.nupkg
-*.snupkg
-.nuget/
-
-# Logs
+*.user
+*.suo
+*.pdb
+*.cache
 *.log
+*.vs/
 
-# JetBrains Rider
+# ==========================
+# IDEs and Editors
+# ==========================
 .idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# System files
+.DS_Store
+Thumbs.db
