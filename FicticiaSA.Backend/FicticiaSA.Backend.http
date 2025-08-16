@@ -1,0 +1,6 @@
+@FicticiaSA.Backend_HostAddress = http://localhost:5209
+
+GET {{FicticiaSA.Backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

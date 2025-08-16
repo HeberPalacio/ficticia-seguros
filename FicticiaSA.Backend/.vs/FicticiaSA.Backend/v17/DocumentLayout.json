@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|c:\\users\\asus\\documents\\heber\\ficticia s.a\\ficticiasa.backend\\ficticiasa.backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|solutionrelative:ficticiasa.backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|c:\\users\\asus\\documents\\heber\\ficticia s.a\\ficticiasa.backend\\ficticiasa.backend\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|solutionrelative:ficticiasa.backend\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|c:\\users\\asus\\documents\\heber\\ficticia s.a\\ficticiasa.backend\\ficticiasa.backend\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|solutionrelative:ficticiasa.backend\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|c:\\users\\asus\\documents\\heber\\ficticia s.a\\ficticiasa.backend\\ficticiasa.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|solutionrelative:ficticiasa.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|c:\\users\\asus\\documents\\heber\\ficticia s.a\\ficticiasa.backend\\ficticiasa.backend\\controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|solutionrelative:ficticiasa.backend\\controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|c:\\users\\asus\\documents\\heber\\ficticia s.a\\ficticiasa.backend\\ficticiasa.backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|solutionrelative:ficticiasa.backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|c:\\users\\asus\\documents\\heber\\ficticia s.a\\ficticiasa.backend\\ficticiasa.backend\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|solutionrelative:ficticiasa.backend\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|c:\\users\\asus\\documents\\heber\\ficticia s.a\\ficticiasa.backend\\ficticiasa.backend\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|solutionrelative:ficticiasa.backend\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|c:\\users\\asus\\documents\\heber\\ficticia s.a\\ficticiasa.backend\\ficticiasa.backend\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|solutionrelative:ficticiasa.backend\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|c:\\users\\asus\\documents\\heber\\ficticia s.a\\ficticiasa.backend\\ficticiasa.backend\\repositories\\personarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|solutionrelative:ficticiasa.backend\\repositories\\personarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|c:\\users\\asus\\documents\\heber\\ficticia s.a\\ficticiasa.backend\\ficticiasa.backend\\data\\ficticiacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|solutionrelative:ficticiasa.backend\\data\\ficticiacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|c:\\users\\asus\\documents\\heber\\ficticia s.a\\ficticiasa.backend\\ficticiasa.backend\\commands\\updatepersonacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC2A3F7-265D-44AE-8620-53EEE8D78A00}|FicticiaSA.Backend\\FicticiaBackend.csproj|solutionrelative:ficticiasa.backend\\commands\\updatepersonacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Models\\Persona.cs",
+              "RelativeDocumentMoniker": "FicticiaSA.Backend\\Models\\Persona.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Models\\Persona.cs",
+              "RelativeToolTip": "FicticiaSA.Backend\\Models\\Persona.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T17:21:14.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "FicticiaSA.Backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "FicticiaSA.Backend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAEwFMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T21:11:41.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "FicticiaSA.Backend\\Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "FicticiaSA.Backend\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T22:49:26.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Program.cs",
+              "RelativeDocumentMoniker": "FicticiaSA.Backend\\Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Program.cs",
+              "RelativeToolTip": "FicticiaSA.Backend\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T14:37:33.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "FicticiaSA.Backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\appsettings.json",
+              "RelativeToolTip": "FicticiaSA.Backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-13T22:58:42.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PersonasController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Controllers\\PersonasController.cs",
+              "RelativeDocumentMoniker": "FicticiaSA.Backend\\Controllers\\PersonasController.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Controllers\\PersonasController.cs",
+              "RelativeToolTip": "FicticiaSA.Backend\\Controllers\\PersonasController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAuwFMAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T22:10:58.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "FicticiaSA.Backend\\DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "FicticiaSA.Backend\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T21:15:32.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PersonaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Repositories\\PersonaRepository.cs",
+              "RelativeDocumentMoniker": "FicticiaSA.Backend\\Repositories\\PersonaRepository.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Repositories\\PersonaRepository.cs",
+              "RelativeToolTip": "FicticiaSA.Backend\\Repositories\\PersonaRepository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwA4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T18:08:23.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "FicticiaSA.Backend\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "FicticiaSA.Backend\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T20:44:41.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "FicticiaSA.Backend\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Models\\Usuario.cs",
+              "RelativeToolTip": "FicticiaSA.Backend\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T20:40:35.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FicticiaContext.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Data\\FicticiaContext.cs",
+              "RelativeDocumentMoniker": "FicticiaSA.Backend\\Data\\FicticiaContext.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Data\\FicticiaContext.cs",
+              "RelativeToolTip": "FicticiaSA.Backend\\Data\\FicticiaContext.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T21:06:12.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UpdatePersonaCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Commands\\UpdatePersonaCommand.cs",
+              "RelativeDocumentMoniker": "FicticiaSA.Backend\\Commands\\UpdatePersonaCommand.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\Heber\\Ficticia S.A\\FicticiaSA.Backend\\FicticiaSA.Backend\\Commands\\UpdatePersonaCommand.cs",
+              "RelativeToolTip": "FicticiaSA.Backend\\Commands\\UpdatePersonaCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T18:07:19.963Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
